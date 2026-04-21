@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#4f46e5" />
+    <meta name="description" content="EduCore – Online Learning & Course Management Platform. Enroll in courses, track progress, take quizzes, and grow your skills." />
+
+    <!-- Open Graph / Social Sharing -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://educore.example.com" />
+    <meta property="og:title" content="EduCore – Learn Without Limits" />
+    <meta property="og:description" content="Enroll in courses, track progress, take quizzes, and grow your skills with EduCore." />
+    <meta property="og:image" content="%PUBLIC_URL%/og-image.png" />
+
+    <!-- Twitter Card -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://educore.example.com" />
+    <meta property="twitter:title" content="EduCore – Learn Without Limits" />
+    <meta property="twitter:description" content="Enroll in courses, track progress, take quizzes, and grow your skills with EduCore." />
+    <meta property="twitter:image" content="%PUBLIC_URL%/og-image.png" />
+
+    <!-- Preconnect to API and fonts -->
+    <link rel="preconnect" href="http://localhost:8000" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Optional: Load a clean system font stack (Tailwind handles this, but fallback) -->
+    <style>
+      /* Inline minimal spinner for initial loading */
+      .app-loader {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        background: #f9fafb;
+      }
+      .app-loader-spinner {
+        width: 48px;
+        height: 48px;
+        border: 4px solid #e5e7eb;
+        border-top-color: #4f46e5;
+        border-radius: 50%;
+        animation: app-spin 1s linear infinite;
+      }
+      @keyframes app-spin {
+        to { transform: rotate(360deg); }
+      }
+    </style>
+
+    <title>EduCore · Online Learning Platform</title>
+  </head>
+  <body>
+    <noscript>
+      <div style="padding:2rem;text-align:center;font-family:system-ui,sans-serif;">
+        <h1 style="color:#1f2937;">JavaScript is required</h1>
+        <p style="color:#4b5563;">Please enable JavaScript to use EduCore.</p>
+      </div>
+    </noscript>
+
+    <!-- This is where React mounts -->
+    <div id="root">
+      <!-- Fallback loading spinner while React loads -->
+      <div class="app-loader">
+        <div class="app-loader-spinner"></div>
+      </div>
+    </div>
+
+    <!--
+      EduCore – Full‑stack Learning Platform
+      Built with React, FastAPI, and MySQL
+    -->
+  </body>
+</html>
