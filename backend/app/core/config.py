@@ -9,7 +9,7 @@ class Settings(BaseSettings):
     MYSQL_HOST: str = "localhost"
     MYSQL_PORT: str = "3306"
     MYSQL_USER: str = "root"
-    MYSQL_PASSWORD: str = "Sai%402222"
+    MYSQL_PASSWORD: str = "educore_password"    # write your MySQL_password
     MYSQL_DATABASE: str = "educore_db"
     
     @property
