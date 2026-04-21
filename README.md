@@ -47,26 +47,26 @@ EduCore is a full‑stack online learning platform that allows instructors to cr
 | **DevOps** | Docker, Docker Compose |
 
 ---
-**Setup Configuration:**
+# Setup Configuration:
 
-**Backend**
+## Backend
 
-cd backend
-python -m venv venv
-source venv/bin/activate      # Windows: venv\Scripts\activate
-pip install -r requirements.txt
+- cd backend
+- python -m venv venv
+- source venv/bin/activate      # Windows: venv\Scripts\activate
+- pip install -r requirements.txt
 
 # Set environment variables (or use .env)
-export MYSQL_HOST=localhost
-export MYSQL_USER=educore_user
-export MYSQL_PASSWORD=educore_password
-export MYSQL_DATABASE=educore_db
-export SECRET_KEY=your-secret-key
 
-uvicorn app.main:app --reload --port 8000
+- export MYSQL_HOST=localhost
+- export MYSQL_USER=educore_user
+- export MYSQL_PASSWORD=educore_password
+- export MYSQL_DATABASE=educore_db
+- export SECRET_KEY=your-secret-key
 
-**Frontend**
+- uvicorn app.main:app --reload --port 8000
 
-cd frontend
-npm install
-npm start
+## Frontend
+- cd frontend
+- npm install
+- npm start
